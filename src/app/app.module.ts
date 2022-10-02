@@ -7,13 +7,15 @@ import { InputListComponent } from './Form/input-list/input-list.component';
 import { AnchorAttributesComponent } from './Form/anchor-attributes/anchor-attributes.component';
 import { ReactiveFormComponent } from './Form/reactive-form/reactive-form.component';
 import { AppRoutingModule } from './app-routing.module';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     InputListComponent,
     AnchorAttributesComponent,
-    ReactiveFormComponent
+    ReactiveFormComponent,
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,
