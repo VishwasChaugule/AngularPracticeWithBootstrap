@@ -7,11 +7,11 @@ import { InputListComponent } from './Form/input-list/input-list.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 const routes: Routes = [
-  {path:'reactiveform', component: ReactiveFormComponent},
-  {path:'anchor', component: AnchorAttributesComponent},
-  {path: 'inputtypes', component: InputListComponent},
-  { path: '',   redirectTo: '/reactiveform', pathMatch: 'full' },
-  {path:'**', component: PageNotFoundComponent}
+  { path: 'reactiveform', component: ReactiveFormComponent },
+  { path: 'anchor', component: AnchorAttributesComponent },
+  { path: 'inputtypes', component: InputListComponent },
+  { path: '', redirectTo: '/reactiveform', pathMatch: 'full' },
+  { path: '**', component: PageNotFoundComponent }
 ]
 
 @NgModule({
@@ -20,6 +20,6 @@ const routes: Routes = [
     RouterModule.forRoot(routes),
     CommonModule
   ],
-  exports:[RouterModule]
+  exports: [RouterModule]
 })
 export class AppRoutingModule { }
